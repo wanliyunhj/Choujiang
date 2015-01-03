@@ -14,6 +14,10 @@
 		75743E3B1A3C7A44007CA3D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75743E3A1A3C7A44007CA3D1 /* Images.xcassets */; };
 		75743E3E1A3C7A44007CA3D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75743E3C1A3C7A44007CA3D1 /* LaunchScreen.xib */; };
 		75743E4A1A3C7A45007CA3D1 /* ChoujiangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75743E491A3C7A45007CA3D1 /* ChoujiangTests.m */; };
+		75743E551A3C7A89007CA3D1 /* FlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75743E541A3C7A89007CA3D1 /* FlipView.m */; };
+		75743E571A3C7A9D007CA3D1 /* FlipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75743E561A3C7A9D007CA3D1 /* FlipView.xib */; };
+		75743E631A3C835D007CA3D1 /* HJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75743E601A3C835D007CA3D1 /* HJTimer.m */; };
+		75743E641A3C835D007CA3D1 /* HJTimerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 75743E621A3C835D007CA3D1 /* HJTimerBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		75743E431A3C7A45007CA3D1 /* ChoujiangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChoujiangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75743E481A3C7A45007CA3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75743E491A3C7A45007CA3D1 /* ChoujiangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChoujiangTests.m; sourceTree = "<group>"; };
+		75743E531A3C7A89007CA3D1 /* FlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipView.h; sourceTree = "<group>"; };
+		75743E541A3C7A89007CA3D1 /* FlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipView.m; sourceTree = "<group>"; };
+		75743E561A3C7A9D007CA3D1 /* FlipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlipView.xib; sourceTree = "<group>"; };
+		75743E5F1A3C835D007CA3D1 /* HJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTimer.h; sourceTree = "<group>"; };
+		75743E601A3C835D007CA3D1 /* HJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTimer.m; sourceTree = "<group>"; };
+		75743E611A3C835D007CA3D1 /* HJTimerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTimerBridge.h; sourceTree = "<group>"; };
+		75743E621A3C835D007CA3D1 /* HJTimerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTimerBridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +92,15 @@
 		75743E2C1A3C7A44007CA3D1 /* Choujiang */ = {
 			isa = PBXGroup;
 			children = (
+				75743E5E1A3C835D007CA3D1 /* HJTimer */,
 				75743E311A3C7A44007CA3D1 /* AppDelegate.h */,
 				75743E321A3C7A44007CA3D1 /* AppDelegate.m */,
 				75743E341A3C7A44007CA3D1 /* ViewController.h */,
 				75743E351A3C7A44007CA3D1 /* ViewController.m */,
 				75743E371A3C7A44007CA3D1 /* Main.storyboard */,
+				75743E531A3C7A89007CA3D1 /* FlipView.h */,
+				75743E541A3C7A89007CA3D1 /* FlipView.m */,
+				75743E561A3C7A9D007CA3D1 /* FlipView.xib */,
 				75743E3A1A3C7A44007CA3D1 /* Images.xcassets */,
 				75743E3C1A3C7A44007CA3D1 /* LaunchScreen.xib */,
 				75743E2D1A3C7A44007CA3D1 /* Supporting Files */,
@@ -117,6 +132,17 @@
 				75743E481A3C7A45007CA3D1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75743E5E1A3C835D007CA3D1 /* HJTimer */ = {
+			isa = PBXGroup;
+			children = (
+				75743E5F1A3C835D007CA3D1 /* HJTimer.h */,
+				75743E601A3C835D007CA3D1 /* HJTimer.m */,
+				75743E611A3C835D007CA3D1 /* HJTimerBridge.h */,
+				75743E621A3C835D007CA3D1 /* HJTimerBridge.m */,
+			);
+			path = HJTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +228,7 @@
 				75743E391A3C7A44007CA3D1 /* Main.storyboard in Resources */,
 				75743E3E1A3C7A44007CA3D1 /* LaunchScreen.xib in Resources */,
 				75743E3B1A3C7A44007CA3D1 /* Images.xcassets in Resources */,
+				75743E571A3C7A9D007CA3D1 /* FlipView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75743E641A3C835D007CA3D1 /* HJTimerBridge.m in Sources */,
 				75743E361A3C7A44007CA3D1 /* ViewController.m in Sources */,
 				75743E331A3C7A44007CA3D1 /* AppDelegate.m in Sources */,
+				75743E631A3C835D007CA3D1 /* HJTimer.m in Sources */,
 				75743E301A3C7A44007CA3D1 /* main.m in Sources */,
+				75743E551A3C7A89007CA3D1 /* FlipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = Choujiang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +443,7 @@
 				75743E4F1A3C7A45007CA3D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75743E501A3C7A45007CA3D1 /* Build configuration list for PBXNativeTarget "ChoujiangTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +452,7 @@
 				75743E521A3C7A45007CA3D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
